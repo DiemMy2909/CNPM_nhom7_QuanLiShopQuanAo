@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>DBDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>lab6.jsp</welcome-file>
+<!--    <welcome-file>index.htm</welcome-file>-->
+<!--    <welcome-file>index.jsp</welcome-file>-->
+<!--    <welcome-file>default.html</welcome-file>-->
+<!--    <welcome-file>default.htm</welcome-file>-->
+<!--    <welcome-file>default.jsp</welcome-file>-->
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>DangKi</servlet-name>
+    <servlet-class>controller.DangKi</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DangKi</servlet-name>
+    <url-pattern>/dangki</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DangNhap</servlet-name>
+    <servlet-class>controller.DangNhap</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DangNhap</servlet-name>
+    <url-pattern>/dangnhap</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddCart</servlet-name>
+    <servlet-class>controller.AddCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCart</servlet-name>
+    <url-pattern>/addcart</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>controller.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Dangxuat</servlet-name>
+    <servlet-class>controller.Dangxuat</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Dangxuat</servlet-name>
+    <url-pattern>/dangxuat</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>UpdateUser</servlet-name>
+    <servlet-class>controller.UpdateUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUser</servlet-name>
+    <url-pattern>/updateuser</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>LoadProductByCategoryController</servlet-name>
+    <servlet-class>controller.LoadProductByCategoryController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadProductByCategoryController</servlet-name>
+    <url-pattern>/danh-muc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoadDetailProductController</servlet-name>
+    <servlet-class>controller.LoadDetailProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoadDetailProductController</servlet-name>
+    <url-pattern>/chi-tiet-san-pham</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
